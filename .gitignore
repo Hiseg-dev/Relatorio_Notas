@@ -1,0 +1,17 @@
+# Arquivos e pastas gerados pelo Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Pastas de ambiente virtual
+.venv
+venv/
+ENV/
+env/
+
+# Pasta com os arquivos de entrada (planilhas ODS)
+inputs_ods/
+
+# Pasta com os arquivos de saída (CSV, PNG, PDF)
+output/
