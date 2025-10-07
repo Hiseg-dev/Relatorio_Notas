@@ -22,6 +22,12 @@ def load_data():
 
 df = load_data()
 
+# --- Funções de Apoio ---
+@st.cache_data
+def convert_df(df_to_convert):
+    """Converte um DataFrame para CSV em memória, pronto para download."""
+    return df_to_convert.to_csv(index=False).encode('utf-8')
+
 # --- Título Principal ---
 st.title("📊 Painel de Análise de Notas")
 
